@@ -13,6 +13,10 @@ app = application
 # model guloke load korte hbe
 scaler = pickle.load(open('models/scaler.pkl','rb'))
 regressor = pickle.load(open('models/regressor.pkl' ,'rb'))
+dtc = pickle.load(open('models/dtc.pkl','rb'))
+svc = pickle.load(open('models/svc.pkl','rb'))
+gnb = pickle.load(open('models/gnb.pkl','rb'))
+
 
 @app.route("/")
 def home_page():
